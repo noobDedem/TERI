@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.fantasticfive.teri" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Masuk"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mahasiswa.activities.MainActivity"
+            android:label="TERI"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dosen.activities.MainActivityDosen"
+            android:label="TERI"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.activities.MainActivityAdmin"
+            android:label="TERI"
+            android:screenOrientation="portrait"/>
+       <activity android:name=".mahasiswa.activities.KelolaMataKuliahActivity"
+            android:label="Kelola Mata Kuliah"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mahasiswa.activities.MainActivity"/>
+        </activity>
+        <activity android:name=".mahasiswa.activities.DetailDosenActivity"
+            android:label="Detail Dosen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mahasiswa.activities.DetailTugasActivity"
+            android:label="Detail Tugas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mahasiswa.activities.KomentarActivity"
+            android:label="Komentar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mahasiswa.activities.FormUploadActivity"
+            android:label="Form Upload Tugas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dosen.activities.DaftarTugasActivity"
+            android:label="Daftar Tugas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dosen.activities.TambahTugasActivity"
+            android:label="Tambah Tugas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dosen.activities.DetailTugasActivity"
+            android:label="Detail Tugas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dosen.activities.EditTugasActivity"
+            android:label="Ubah Tugas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dosen.activities.KomentarActivity"
+            android:label="Komentar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dosen.activities.BankTugasActivity"
+            android:label="Bank Tugas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.activities.TambahUserActivity"
+            android:label="Tambah Pengguna"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.activities.DetailUserActivity"
+            android:label="Detail Pengguna"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.activities.TambahMataKuliahActivity"
+            android:label="Tambah Mata Kuliah"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.activities.DetailMataKuliahActivity"
+            android:label="Detail Mata Kuliah"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.activities.TambahKelasActivity"
+            android:label="Tambah Kelas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.activities.UbahUserActivity"
+            android:label="Ubah Pengguna"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.activities.DaftarKelasActivity"
+            android:label="Daftar Kelas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.activities.UbahMataKuliahActivity"
+            android:label="Ubah Mata Kuliah"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".admin.activities.UbahKelasActivity"
+            android:label="Ubah Kelas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mahasiswa.activities.UploadedTugasActivity"
+            android:label="Tugas Terunggah"
+            android:screenOrientation="portrait"/>
+
+        <receiver
+            android:name=".alarm.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"/>
+
+    </application>
+</manifest>

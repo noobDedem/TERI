@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FEFEFE</color>
+    <color name="colorPrimaryDark">#B6B6B7</color>
+    <color name="textColorPrimary">#B71C1C</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#B71C1C</color>
+    <color name="colorAccent">#B71C1C</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+</resources>
